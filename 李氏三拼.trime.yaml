@@ -1432,8 +1432,8 @@ preset_keyboards:
     - {click: 'm', long_click: "'", width: 12, label: "y w '", hint: -ong üe}
     - {click: '/', long_click: '?', swipe_up: '?', width: 7, key_text_color: 0xffbdbdbd}
     - {click: BackSpace, width: 15, width: 14}
-    - {click: Shift_L, long_click: Menu, swipe_up: Hide, swipe_down, Hide, composing: Escape, width: 16}
+    - {click: Shift_L, swipe_up: Hide, swipe_down, Hide, composing: Escape, width: 16}
     - {click: Keyboard_symbols, long_click: Keyboard_number, swipe_up: Keyboard_number, width: 12}
-    - {click: space, long_click: Mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Mode_switch, swipe_down: Down, width: 44}
+    - {click: space, long_click: Menu, swipe_left: Left, swipe_right: Right, swipe_up: Mode_switch, swipe_down: Down, width: 44}
     - {click: ',', long_click: '.', swipe_up: '.', label: " ，", width: 12}
     - {click: Return, long_click: Theme_settings, swipe_up: Hide, swipe_down: Hide, width: 16}
