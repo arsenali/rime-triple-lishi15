@@ -404,7 +404,6 @@ translator:
     - xform/c([^h]\w*)2\>/TR$1/
     - xform/c([^h]\w*)3\>/TX$1/
     - xform/c([^h]\w*)4\>/TC$1/
-    - xform/c([^h])/TS$1/
     - xform/\<([mnlr]\w+)2\>/$1\x30/    # mnlr韻母轉換
     - xform/\<([mnlr])([^iuv]\w*1)\>/$1h$2/
     - xform/\<([mnlr])([iuv]\w*)1\>/$1$2\x32/
