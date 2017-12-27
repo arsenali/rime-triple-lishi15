@@ -1415,7 +1415,7 @@ preset_keyboards:
     - {click: 'p', long_click: '}', width: 7, key_text_color: 0xffbdbdbd}
     - {click: 'a', long_click: select_all , width: 10, key_text_color: 0xffbdbdbd}
     - {click: 's', long_click: Home, width: 10, key_text_color: 0xffbdbdbd}
-    - {click: 'd', long_click: End, width: 11, label: "ch c", hint: i-}
+    - {click: 'd', long_click: End, width: 11, label: "ch c", hint: fzcs -i-}
     - {click: 'f', long_click: Page_Up, width: 12, label: "d", hint: -e u}
     - {click: 'g', long_click: Page_Down, width: 12, label: "t", hint: -ei i}
     - {click: 'h', long_click: Left, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right, width: 12, label: "n", hint: -en}
@@ -1425,15 +1425,15 @@ preset_keyboards:
     - {click: ';', long_click: ':', width: 7, key_text_color: 0xffbdbdbd}
     - {click: 'z', long_click: '`', width: 10, key_text_color: 0xffbdbdbd}
     - {click: 'x', long_click: cut, width: 10, key_text_color: 0xffbdbdbd}
-    - {click: 'c', long_click: copy, width: 11, label: "sh s", hint: u ü-}
+    - {click: 'c', long_click: copy, width: 11, label: "sh s", hint: -u ü-}
     - {click: 'v', long_click: paste, width: 12, label: "g j", hint: -o 空 ü}
     - {click: 'b', long_click: '~', width: 12, label: "k q", hint: -ao üan}
     - {click: 'n', long_click: '"', width: 12, label: "h x", hint: -ou ün}
-    - {click: 'm', long_click: "'", width: 12, label: "' y w", hint: -ong üe}
+    - {click: 'm', long_click: "'", width: 12, label: "y w '", hint: -ong üe}
     - {click: '/', long_click: '?', swipe_up: '?', width: 7, key_text_color: 0xffbdbdbd}
     - {click: BackSpace, width: 15, width: 14}
     - {click: Shift_L, long_click: Menu, swipe_up: Hide, swipe_down, Hide, composing: Escape, width: 16}
     - {click: Keyboard_symbols, long_click: Keyboard_number, swipe_up: Keyboard_number, width: 12}
     - {click: space, long_click: Mode_switch, swipe_left: Left, swipe_right: Right, swipe_up: Mode_switch, swipe_down: Down, width: 44}
-    - {click: '.', long_click: ',', swipe_up: ',', label: " 。", width: 12}
+    - {click: ',', long_click: '.', swipe_up: '.', label: " ，", width: 12}
     - {click: Return, long_click: Theme_settings, swipe_up: Hide, swipe_down: Hide, width: 16}
