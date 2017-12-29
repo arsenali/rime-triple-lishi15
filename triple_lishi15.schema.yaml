@@ -274,7 +274,7 @@ translator:
     - xform/\<BIO([1-5])\>/Zie$1/
     - xform/\<BUA([1-5])\>/Ziou$1/
     - xform/\<BUAi([1-5])\>/Ziao$1/
-    - xform/\<BV(An|En|e)([1-5])\>/Zv$1$2/
+    - xform/\<BU(An|Ang|En)([1-5])\>/Zi$1$2/
     - xform/\<BUEi([1-5])\>/Zii$1/
     - xform/\<BUo([1-5])\>/Zieng$1/
     - xform/\<BV([1-5])\>/Zv$1/
