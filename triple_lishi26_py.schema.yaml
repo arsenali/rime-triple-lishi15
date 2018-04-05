@@ -56,7 +56,7 @@ engine:
 
 speller:
   alphabet: 'zyxwvutsrqponmlkjihgfedcba'
-  initials: 'zxvutsrqpnmlkjihgfdcb'  # 可作聲母
+  # initials: 'zxvutsrqpnmlkjihgfdcb'  # 可作聲母
   delimiter: " ;'"
   algebra:
    # 音節修正合併
