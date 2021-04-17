@@ -1,0 +1,21 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 網絡流行語
+
+---
+name: terra_pinyin.liuxing
+version: "2018.03.17"
+sort: by_weight
+use_preset_vocabulary: true
+...
+# 作者：
+# 阿森納裡	a1 sen1 na4 li3
+
+# 開始
+沒誰了	mei2 sei2 le5
+懟	dui3
+怒懟	nu4 dui3
+作	zuo1
+# 作死	zuo1 si3
+
