@@ -6,9 +6,11 @@
 
 ## 安装
 
-本方案依赖于 [地球拼音](https://github.com/rime/rime-terra-pinyin) ℞ rime-terra-pinyin，安装本方案前请先安装 ℞ rime-terra-pinyin。
+[东风破](https://github.com/rime/plum) 安装口令： <code> bash rime-install arsenali/rime-triple-lishi </code>
 
-[东风破](https://github.com/rime/plum) 安装口令： bash rime-install arsenali/rime-triple-lishi
+本方案词库依赖于 [地球拼音](https://github.com/rime/rime-terra-pinyin) ℞ rime-terra-pinyin，安装本方案前请先安装 ℞ rime-terra-pinyin。
+
+皮肤（主题）文件依赖于 [同文安卓輸入法平臺](https://github.com/osfans/trime) ℞ trime，安卓平台使用本方案前请先安装 ℞ trime。
 
 
 ## 简介
