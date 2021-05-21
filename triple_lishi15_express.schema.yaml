@@ -180,7 +180,7 @@ speller:
     - derive/^([qwertasdfgzxcvbyhn]{2})b$/$1n/
 
 translator:
-  dictionary: terra_pinyin.extended
+  dictionary: terra_pinyin
   prism: triple_lishi15_express
   spelling_hints: 5 # ～字以內候選標註完整帶調拼音
   preedit_format:
