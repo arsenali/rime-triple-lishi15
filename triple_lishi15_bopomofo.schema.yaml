@@ -2,8 +2,8 @@
 # encoding: utf-8
 
 schema:
-  schema_id: triple_lishi15_express
-  name: 李氏三拼快打
+  schema_id: triple_lishi15_bopomofo
+  name: 李氏三拼注音
   version: "5.0"
   author:
     - 佛振 <chen.sst@gmail.com>
@@ -11,8 +11,8 @@ schema:
   description: |
     15鍵內實現“聲母+介調+韻母”三碼輸入一個帶調音節；
     聲母、韻母按照聲母表、韻母表順序排列；
-    回車輸入漢語拼音，空格輸入漢字；
-    支持首碼簡拼和前兩碼簡拼，支持云輸入。
+    回車輸入注音符號，空格輸入漢字；
+    支持首碼簡拼和前兩碼簡拼。
   dependencies:
     - stroke
 
@@ -181,7 +181,7 @@ speller:
 
 translator:
   dictionary: terra_pinyin.extended
-  prism: triple_lishi15_express
+  prism: triple_lishi15_bopomofo
   spelling_hints: 5 # ～字以內候選標註完整帶調拼音
   preedit_format:
    # 1：  李氏15鍵輸入碼->數字標調拼音
@@ -290,58 +290,80 @@ translator:
     - xform/\<yu([in])/we$1/
     - xform/\<yv/yu/
     
-   # 2.1：數字標調拼音->帶調拼音（隔音符、簡拼處理）：帶調拼音形式
+   # 2.1：數字標調拼音->帶調拼音（隔音符、簡拼處理）：注音符號形式
     - xform/'/"/                                            # 輸入的隔音符號'變換為"
     - xform/ ([^aoe]|[zcs]h)([iu]?[0-5]-)?(?![aoeiuvh0-5])/ '$1$2/  # 簡拼前+隔音符
     - xform/(?<!\w)([^aoe]|[zcs]h)([iu]?[0-5]-)? /$1$2' /           # 簡拼後+隔音符
     - xform/' '?/ '/
-    - xform/gi([0-5]-)/ji$1/                                # 前兩碼簡拼
-    - xform/ki([0-5]-)/qi$1/
-    - xform/hi([0-5]-)/xi$1/
-    - xform/gu([0-5]-)/gu$1\x2Fjü$1/
-    - xform/ku([0-5]-)/ku$1\x2Fqü$1/
-    - xform/hu([0-5]-)/hu$1\x2Fxü$1/
-    - xform/([nl])u([0-5]-)/$1u$2\x2F$1ü$2/
-    - xform/y([0-5]-)/’$1/
-    - xform/yi([0-5]-)/y$1/
-    - xform/yu([0-5]-)/w$1\x2Fyu$1/
-    - xform/([zcs])([0-5]-)/$1h$2/
-    - xform/([zcs])i([0-5]-)/$1$2/
-    - xform/([zcs])(u[0-5]-)/$1h$2\x2F$1$2/
-    - xform/ri([0-5]-)/f$1/
-    - xform/r(u[0-5]-)/r$1\x2Ff$1/
-    - xform/g(?!\w)/g\x2Fj/                                 # 首碼簡拼
-    - xform/k(?!\w)/k\x2Fq/
-    - xform/h(?!\w)/h\x2Fx/
-    - xform/y(?!\w)/’\x2Fy\x2Fw/
-    - xform/([zcs])(?!\w)/$1h\x2F$1/
-    - xform/r(?!\w)/r\x2Ff/
-    - xform/1-/̄-/                                          # 變換聲調符號
-    - xform/2-/́-/
-    - xform/3-/̌-/
-    - xform/4-/̀-/
-    - xform/5-/̇-/
-    - xform/0-/-/
-    - xform/-\x2F/\x2F/
+    - xform/gi([0-5]-)/ㄐㄧ$1/                                # 前兩碼簡拼
+    - xform/ki([0-5]-)/ㄑㄧ$1/
+    - xform/hi([0-5]-)/ㄒㄧ$1/
+    - xform/gu([0-5]-)/ㄍㄨ$1\x2Fㄐㄩ$1/
+    - xform/ku([0-5]-)/ㄎㄨ$1\x2Fㄑㄩ$1/
+    - xform/hu([0-5]-)/ㄏㄨ$1\x2Fㄒㄩ$1/
+    - xform/([nl])u([0-5]-)/$1ㄨ$2\x2F$1ㄩ$2/
+    - xform/y([0-5]-)/零$1/
+    - xform/yi([0-5]-)/ㄧ$1/
+    - xform/yu([0-5]-)/ㄨ$1\x2Fㄩ$1/
+    - xform/z([0-5]-)/ㄓ$1/
+    - xform/c([0-5]-)/ㄔ$1/
+    - xform/s([0-5]-)/ㄕ$1/
+    - xform/zi([0-5]-)/ㄗ$1/
+    - xform/ci([0-5]-)/ㄘ$1/
+    - xform/si([0-5]-)/ㄙ$1/
+    - xform/zu([0-5]-)/ㄓㄨ$1\x2Fㄗㄨ$1/
+    - xform/cu([0-5]-)/ㄔㄨ$1\x2Fㄘㄨ$1/
+    - xform/su([0-5]-)/ㄕㄨ$1\x2Fㄙㄨ$1/
+    - xform/ri([0-5]-)/ㄈ$1/
+    - xform/ru([0-5]-)/ㄖㄨ$1\x2Fㄈㄨ$1/
+    - xform/g(?!\w)/ㄍ\x2Fㄐ/                                 # 首碼簡拼
+    - xform/k(?!\w)/ㄎ\x2Fㄑ/
+    - xform/h(?!\w)/ㄏ\x2Fㄒ/
+    - xform/y(?!\w)/零\x2Fㄩ\x2Fㄨ/
+    - xform/z(?!\w)/ㄓ\x2Fㄗ/
+    - xform/c(?!\w)/ㄔ\x2Fㄘ/
+    - xform/s(?!\w)/ㄕ\x2Fㄙ/
+    - xform/r(?!\w)/ㄖ\x2Fㄈ/
+    - xform/1-/＿ˉ/                                          # 變換聲調符號
+    - xform/2-/＿ˊ/
+    - xform/3-/＿ˇ/
+    - xform/4-/＿ˋ/
+    - xform/5-/＿˙/
+    - xform/0-/＿/
+    - xform/＿(ˉ|ˊ|ˇ|ˋ|˙)?\x2F/\x2F/
     
-   # 2.2：數字標調拼音->帶調拼音（全碼轉換）：漢語拼音全拼，去掉聲調
-    - xform/([bpmfw])on(g?[0-5])/$1en$2/                    # 異拼
-    - xform/zii([0-5])/ji$1/                                # 尖音處理
-    - xform/z(i[a-z]+[0-5])/j$1/
-    - xform/zv([a-z]*[0-5])/ju$1/
-    - xform/cii([0-5])/qi$1/
-    - xform/c(i[a-z]+[0-5])/q$1/
-    - xform/cv([a-z]*[0-5])/qu$1/
-    - xform/sii([0-5])/xi$1/
-    - xform/s(i[a-z]+[0-5])/x$1/
-    - xform/sv([a-z]*[0-5])/xu$1/
-    # - xform/([nl])v([a-z]*[0-5])/$1ü$2/                   # [nl]v(-)轉換為ü
-    - xform/([nl])v([a-z]+[0-5])/$1u$2/                     # [nl]v-轉換為u-
-    - xform/[0-5']//                                        # 去掉聲調和隔音符
+   # 2.2：數字標調拼音->帶調拼音（全碼轉換）：注音符號
+    - xform/([jqx])u/$1v/
+    - xform/iu/iou/
+    - xform/ui/uei/
+    - xform/ong/ung/
+    - xform/yi?/i/
+    - xform/wu?/u/
+    - xform/iu/v/
+    - xform/([iuv])n/$1en/
+    - xform/zh/Z/
+    - xform/ch/C/
+    - xform/sh/S/
+    - xform/ai/A/
+    - xform/ei/I/
+    - xform/ao/O/
+    - xform/ou/U/
+    - xform/ang/K/
+    - xform/eng/G/
+    - xform/an/M/
+    - xform/en/N/
+    - xform/er/R/
+    - xform/eh/E/
+    - xform/([iv])e/$1E/
+    - xform/([ZCSrzcs])i(i|[0-5]|\>)/$1$2/
+    - 'xlit|bpmfdtnlgkhjqxZCSrzcsiuvaoeEAIOUMNKGR12345|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˉˊˇˋ˙|'
+    - xform/([^ˉˊˇˋ˙']) (?!')/$1' /                         # 無聲調後+隔音符
+    - xform/0//
+    - xform/(?<!＿)(ˉ|ˊ|ˇ|ˋ|˙) '/$1 /                        # 聲調符號後去掉隔音符
     
-   # 3：  隔音符;替換為空格
-    # - xform/ //   # 取消空格
-    - xlit|;"| '|   # 把;替換為空格，恢復輸入的隔音符號'
+   # 3：  取消空格
+    - xform/ //    # 取消空格
+    - xlit|;"| '|  # 把;替換為空格，恢復輸入的隔音符號'
 
   comment_format:  # 提示碼爲带调拼音
     - xform/([aoeiuv])(ng?|r)([1-4])/$1$3$2
