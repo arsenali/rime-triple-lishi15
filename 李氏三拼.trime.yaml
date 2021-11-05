@@ -65,7 +65,7 @@ labels:  # 简体中文
   56: &lb_Keyboard_switch 键盘
   57: &lb_Keyboard_move ❖
   58: &lb_Keyboard_next 前进
-  59: &lb_Keyboard_last 后退
+  59: &lb_Keyboard_last 返回
   60: &lb_Keyboard_symbols 符号
   61: &lb_Keyboard_number 数字
   62: &lb_Keyboard_letter 'abc'
@@ -934,12 +934,12 @@ preset_keys:
   ls15bz23jw335: {label: "𝘂̈𝗲𝗻𝗴", preview: "üeng=iong", functional: false}
   
   ls15bz23jwz111: {label: "a", preview: " ", functional: false}
-  ls15bz23jwz112: {label: "ei", preview: "ei变位", functional: false}
+  ls15bz23jwz112: {label: "-i", preview: "整体认读音节", functional: false}
   ls15bz23jwz113: {label: "e", preview: " ", functional: false}
   ls15bz23jwz114: {label: "e", preview: " ", functional: false}
   ls15bz23jwz115: {label: "", preview: " ", functional: false}
   ls15bz23jwz121: {label: "ai", preview: " ", functional: false}
-  ls15bz23jwz122: {label: "i", preview: "空韵", functional: false}
+  ls15bz23jwz122: {label: "ei", preview: " ", functional: false}
   ls15bz23jwz123: {label: "ao", preview: " ", functional: false}
   ls15bz23jwz124: {label: "ou", preview: " ", functional: false}
   ls15bz23jwz125: {label: "", preview: " ", functional: false}
@@ -950,12 +950,12 @@ preset_keys:
   ls15bz23jwz135: {label: "ong", preview: " ", functional: false}
   
   ls15bz23jwz211: {label: "𝗮", preview: " ", functional: false}
-  ls15bz23jwz212: {label: "𝗲𝗶", preview: "ei变位", functional: false}
+  ls15bz23jwz212: {label: "-𝗶", preview: "整体认读音节", functional: false}
   ls15bz23jwz213: {label: "𝗲", preview: " ", functional: false}
   ls15bz23jwz214: {label: "𝗲", preview: " ", functional: false}
   ls15bz23jwz215: {label: "", preview: " ", functional: false}
   ls15bz23jwz221: {label: "𝗮𝗶", preview: " ", functional: false}
-  ls15bz23jwz222: {label: "𝗶", preview: "空韵", functional: false}
+  ls15bz23jwz222: {label: "𝗲𝗶", preview: " ", functional: false}
   ls15bz23jwz223: {label: "𝗮𝗼", preview: " ", functional: false}
   ls15bz23jwz224: {label: "𝗼𝘂", preview: " ", functional: false}
   ls15bz23jwz225: {label: "", preview: " ", functional: false}
@@ -1065,7 +1065,7 @@ preset_keys:
   BackToPreSyl: {label: *lb_BackToPreSyl, text: '{BackToPreviousSyllable}'}
   BackToPrels15dt2b1: {label: *lb_BackToPreSyl, text: '{BackToPreviousSyllable}{Keyboard_ls15dt2b1}'}
   BackToPrels15dtjianyin2b1: {label: *lb_BackToPreSyl, text: '{BackToPreviousSyllable}{Keyboard_ls15dtjianyin2b1}'}
-  BackToPrels15dtyjw: {click: ''}
+  BackToPrels15dtyjw: {label: *lb_BackSpace, click: ''}
   
  # rime狀態
   Mode_switchsy: {toggle: ascii_mode, send: Mode_switch, states: [ Eo, En ]}
@@ -1858,19 +1858,19 @@ preset_keys:
   C_ls15dtjianyinshow: {__include: /preset_keys/C_ls15dtshow, text: 'b{Keyboard_ls15dtjsjy}'}
   ls15dtjbshow: {text: 'y{Keyboard_ls15dtyb0}', preview: "y", label: "a o e", functional: false}
   ls15dtjbishow: {text: 'h{Keyboard_ls15dtybi0}', preview: "h", label: "i", functional: false}
-  ls15dtjbushow: {text: 'n{Keyboard_ls15dtybu0}', preview: "n", label: "u", functional: false}
+  ls15dtjbushow: {text: 'n{Keyboard_ls15dtybu0}', preview: "n", label: "u ü", functional: false}
   ls15dtjpshow: {text: 'y{Keyboard_ls15dtyp0}', preview: "y", label: "a o e", functional: false}
   ls15dtjpishow: {text: 'h{Keyboard_ls15dtypi0}', preview: "h", label: "i", functional: false}
-  ls15dtjpushow: {text: 'n{Keyboard_ls15dtypu0}', preview: "n", label: "u", functional: false}
+  ls15dtjpushow: {text: 'n{Keyboard_ls15dtypu0}', preview: "n", label: "u ü", functional: false}
   ls15dtjmshow: {text: 'y{Keyboard_ls15dtym0}', preview: "y", label: "a o e", functional: false}
   ls15dtjmishow: {text: 'h{Keyboard_ls15dtymi0}', preview: "h", label: "i", functional: false}
-  ls15dtjmushow: {text: 'n{Keyboard_ls15dtymu0}', preview: "n", label: "u", functional: false}
+  ls15dtjmushow: {text: 'n{Keyboard_ls15dtymu0}', preview: "n", label: "u ü", functional: false}
   ls15dtjdshow: {text: 'y{Keyboard_ls15dtyd0}', preview: "y", label: "a o e", functional: false}
   ls15dtjdishow: {text: 'h{Keyboard_ls15dtydi0}', preview: "h", label: "i", functional: false}
-  ls15dtjdushow: {text: 'n{Keyboard_ls15dtydu0}', preview: "n", label: "u", functional: false}
+  ls15dtjdushow: {text: 'n{Keyboard_ls15dtydu0}', preview: "n", label: "u ü", functional: false}
   ls15dtjtshow: {text: 'y{Keyboard_ls15dtyt0}', preview: "y", label: "a o e", functional: false}
   ls15dtjtishow: {text: 'h{Keyboard_ls15dtyti0}', preview: "h", label: "i", functional: false}
-  ls15dtjtushow: {text: 'n{Keyboard_ls15dtytu0}', preview: "n", label: "u", functional: false}
+  ls15dtjtushow: {text: 'n{Keyboard_ls15dtytu0}', preview: "n", label: "u ü", functional: false}
   ls15dtjnshow: {text: 'y{Keyboard_ls15dtyn0}', preview: "y", label: "a o e", functional: false}
   ls15dtjnishow: {text: 'h{Keyboard_ls15dtyni0}', preview: "h", label: "i", functional: false}
   ls15dtjnushow: {text: 'n{Keyboard_ls15dtynu0}', preview: "n", label: "u ü", functional: false}
@@ -3872,9 +3872,9 @@ preset_keyboards:
     __include: /preset_keyboards/ls15bz23jwsm1
     __patch:
       keys/@9/label: "需要说明的是，七个整体认读音节zhi,chi,shi,ri,zi,ci,si"
-      keys/@10/label: "中的韵母虽然写作i，但并不是单韵母i，因此归为第一"
-      keys/@11/label: "类空介韵母，为方便记忆,仍放在2行2列的位置，同时"
-      keys/@12/label: "把和i共键的韵母ei调整到1行2列(o)的位置。　　　　"
+      keys/@10/label: "中的韵母虽然写作i，但并不是单韵母i，而是舌尖元音"
+      keys/@11/label: "“-i”，因此归为第一类空介韵母，放在1行2列的位置。"
+      keys/@12/label:
       keys/@13/label:
       
       keys/@15/click: Keyboard_ls15bz23jwz1
@@ -3997,7 +3997,7 @@ preset_keyboards:
       keys/@28/click: j_ls15zyshow
       keys/@29/click: C_ls15zyshow
       keys/@11/hint: ㄚ
-      keys/@12/hint: ㄛ
+      keys/@12/hint: 'ㄛ/ㄭ'
       keys/@13/hint: 'ㄜ/ㄝ'
       keys/@14/hint: ㄦ
       keys/@15/hint: ㄩㄢ
@@ -5016,7 +5016,7 @@ preset_keyboards:
       keys/@28/label: {__include: /preset_keyboards/ls15dt/keys/@28/hint}
       keys/@29/label: {__include: /preset_keyboards/ls15dt/keys/@29/hint}
       keys/@11/hint:
-      keys/@12/hint: 'ei'
+      keys/@12/hint: '-i'
       keys/@13/hint: '𝘂𝗼'
       keys/@14/hint: '𝘂𝗶'
       keys/@15/hint: '𝘂𝗮𝗻'
@@ -5194,33 +5194,27 @@ preset_keyboards:
   ls15dtyzcsr1:
     __include: /preset_keyboards/ls15dty1
     __patch:
-      keys/@12/label: 'ēi'
-      keys/@19/label: 'ī'
+      keys/@12/label: '-ī'
   ls15dtyzcsr2:
     __include: /preset_keyboards/ls15dty2
     __patch:
-      keys/@12/label: 'éi'
-      keys/@19/label: 'í'
+      keys/@12/label: '-í'
   ls15dtyzcsr3:
     __include: /preset_keyboards/ls15dty3
     __patch:
-      keys/@12/label: 'ěi'
-      keys/@19/label: 'ǐ'
+      keys/@12/label: '-ǐ'
   ls15dtyzcsr4:
     __include: /preset_keyboards/ls15dty4
     __patch:
-      keys/@12/label: 'èi'
-      keys/@19/label: 'ì'
+      keys/@12/label: '-ì'
   ls15dtyzcsr5:
     __include: /preset_keyboards/ls15dty5
     __patch:
-      keys/@12/label: 'ėi'
-      keys/@19/label: 'i̇'
+      keys/@12/label: '-i̇'
   ls15dtyzcsr0:
     __include: /preset_keyboards/ls15dty0
     __patch:
-      keys/@12/label: 'ei'
-      keys/@19/label: 'i'
+      keys/@12/label: '-i'
   ls15dtyi1:
     __include: /preset_keyboards/ls15dty
     __patch:
@@ -5465,12 +5459,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv1
     __patch:
       keys/@11/label: '𝗮̄'
-      keys/@12/label: '𝗲̄𝗶'
+      keys/@12/label: '-𝗶̄'
       keys/@13/label: '𝗲̄'
       keys/@14/label: '𝗲̄'
       keys/@15/label:
       keys/@18/label: '𝗮̄𝗶'
-      keys/@19/label: '𝗶̄'
+      keys/@19/label: '𝗲̄𝗶'
       keys/@20/label: '𝗮̄𝗼'
       keys/@21/label: '𝗼̄𝘂'
       keys/@22/label:
@@ -5485,12 +5479,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv2
     __patch:
       keys/@11/label: '𝗮́'
-      keys/@12/label: '𝗲́𝗶'
+      keys/@12/label: '-𝗶́'
       keys/@13/label: '𝗲́'
       keys/@14/label: '𝗲́'
       keys/@15/label:
       keys/@18/label: '𝗮́𝗶'
-      keys/@19/label: '𝗶́'
+      keys/@19/label: '𝗲́𝗶'
       keys/@20/label: '𝗮́𝗼'
       keys/@21/label: '𝗼́𝘂'
       keys/@22/label:
@@ -5505,12 +5499,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv3
     __patch:
       keys/@11/label: '𝗮̌'
-      keys/@12/label: '𝗲̌𝗶'
+      keys/@12/label: '-𝗶̌'
       keys/@13/label: '𝗲̌'
       keys/@14/label: '𝗲̌'
       keys/@15/label:
       keys/@18/label: '𝗮̌𝗶'
-      keys/@19/label: '𝗶̌'
+      keys/@19/label: '𝗲̌𝗶'
       keys/@20/label: '𝗮̌𝗼'
       keys/@21/label: '𝗼̌𝘂'
       keys/@22/label:
@@ -5525,12 +5519,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv4
     __patch:
       keys/@11/label: '𝗮̀'
-      keys/@12/label: '𝗲̀𝗶'
+      keys/@12/label: '-𝗶̀'
       keys/@13/label: '𝗲̀'
       keys/@14/label: '𝗲̀'
       keys/@15/label:
       keys/@18/label: '𝗮̀𝗶'
-      keys/@19/label: '𝗶̀'
+      keys/@19/label: '𝗲̀𝗶'
       keys/@20/label: '𝗮̀𝗼'
       keys/@21/label: '𝗼̀𝘂'
       keys/@22/label:
@@ -5545,12 +5539,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv5
     __patch:
       keys/@11/label: '𝗮̇'
-      keys/@12/label: '𝗲̇𝗶'
+      keys/@12/label: '-𝗲̇𝗶'
       keys/@13/label: '𝗲̇'
       keys/@14/label: '𝗲̇'
       keys/@15/label:
       keys/@18/label: '𝗮̇𝗶'
-      keys/@19/label: '𝗶̇'
+      keys/@19/label: '-𝗶̇'
       keys/@20/label: '𝗮̇𝗼'
       keys/@21/label: '𝗼̇𝘂'
       keys/@22/label:
@@ -5565,12 +5559,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv0
     __patch:
       keys/@11/label: '𝗮'
-      keys/@12/label: '𝗲𝗶'
+      keys/@12/label: '-𝗶'
       keys/@13/label: '𝗲'
       keys/@14/label: '𝗲'
       keys/@15/label:
       keys/@18/label: '𝗮𝗶'
-      keys/@19/label: '𝗶'
+      keys/@19/label: '𝗲𝗶'
       keys/@20/label: '𝗮𝗼'
       keys/@21/label: '𝗼𝘂'
       keys/@22/label:
@@ -7951,15 +7945,15 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsr1
     __patch:
       keys/@16/composing: BackSpacels15dtyz
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyz2:
     __include: /preset_keyboards/ls15dtyzcsr2
     __patch:
       keys/@16/composing: BackSpacels15dtyz
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@27/click: ''
       keys/@28/click: ''
@@ -7967,8 +7961,8 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsr3
     __patch:
       keys/@16/composing: BackSpacels15dtyz
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyz4:
     __include: /preset_keyboards/ls15dtyzcsr4
@@ -7992,10 +7986,10 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsri1
     __patch:
       keys/@16/composing: BackSpacels15dtyz
-      keys/@12/click: ''
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyzi2:
     __include: /preset_keyboards/ls15dtyzcsri2
@@ -8012,16 +8006,16 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsri3
     __patch:
       keys/@16/composing: BackSpacels15dtyz
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyzi4:
     __include: /preset_keyboards/ls15dtyzcsri4
     __patch:
       keys/@16/composing: BackSpacels15dtyz
       keys/@11/click: ''
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyzi5:
     __include: /preset_keyboards/ls15dtyzcsri5
@@ -8074,72 +8068,72 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsr1
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyc2:
     __include: /preset_keyboards/ls15dtyzcsr2
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyc3:
     __include: /preset_keyboards/ls15dtyzcsr3
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyc4:
     __include: /preset_keyboards/ls15dtyzcsr4
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyc5:
     __include: /preset_keyboards/ls15dtyzcsr5
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyc0:
     __include: /preset_keyboards/ls15dtyzcsr0
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyci1:
     __include: /preset_keyboards/ls15dtyzcsri1
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyci2:
     __include: /preset_keyboards/ls15dtyzcsri2
     __patch:
       keys/@16/composing: BackSpacels15dtyc
       keys/@11/click: ''
-      keys/@12/click: ''
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@21/click: ''
       keys/@22/click: ''
   ls15dtyci3:
     __include: /preset_keyboards/ls15dtyzcsri3
     __patch:
       keys/@16/composing: BackSpacels15dtyc
-      keys/@12/click: ''
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@26/click: ''
       keys/@27/click: ''
@@ -8197,8 +8191,8 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsr1
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@29/click: ''
   ls15dtys2:
@@ -8214,16 +8208,16 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsr3
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@29/click: ''
   ls15dtys4:
     __include: /preset_keyboards/ls15dtyzcsr4
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@29/click: ''
   ls15dtys5:
@@ -8244,18 +8238,18 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsri1
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtysi2:
     __include: /preset_keyboards/ls15dtyzcsri2
     __patch:
       keys/@16/composing: BackSpacels15dtys
       keys/@11/click: ''
-      # keys/@12/click: ''        # sei2沒誰了
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''        # sei2沒誰了
       keys/@18/click: ''
       keys/@20/click: ''
       keys/@21/click: ''
@@ -8268,33 +8262,33 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyzcsri3
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@13/click: ''
       keys/@14/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@28/click: ''
   ls15dtysi4:
     __include: /preset_keyboards/ls15dtyzcsri4
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      keys/@12/click: ''
       keys/@15/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
       keys/@26/click: ''
   ls15dtysi5:
     __include: /preset_keyboards/ls15dtyzcsri5
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      # keys/@12/click: ''        # sei2沒誰了
       keys/@15/click: ''
+      keys/@19/click: ''        # sei2沒誰了
       keys/@22/click: ''
   ls15dtysi0:
     __include: /preset_keyboards/ls15dtyzcsri0
     __patch:
       keys/@16/composing: BackSpacels15dtys
-      # keys/@12/click: ''        # sei2沒誰了
       keys/@15/click: ''
+      keys/@19/click: ''        # sei2沒誰了
       keys/@22/click: ''
   ls15dtysu1:
     __include: /preset_keyboards/ls15dtyzcsru1
@@ -8384,34 +8378,33 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@11/click: ''
-      keys/@12/click: ''
       keys/@15/click: ''
       keys/@18/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyr5:
     __include: /preset_keyboards/ls15dtyzcsr5
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@11/click: ''
-      keys/@12/click: ''
       keys/@15/click: ''
       keys/@18/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyr0:
     __include: /preset_keyboards/ls15dtyzcsr0
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@11/click: ''
-      keys/@12/click: ''
       keys/@15/click: ''
       keys/@18/click: ''
+      keys/@19/click: ''
       keys/@22/click: ''
   ls15dtyri1:
     __include: /preset_keyboards/ls15dtyzcsri1
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼̄'
-      keys/@19/label: '𝗲̄𝗶'
       keys/@20/label: '𝗶𝗮̄𝗼'
       keys/@12/click: ''
       keys/@13/click: ''
@@ -8425,7 +8418,6 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼́'
-      keys/@19/label: '𝗲́𝗶'
       keys/@20/label: '𝗶𝗮́𝗼'
       keys/@13/click: ''
       keys/@14/click: ''
@@ -8438,7 +8430,6 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼̌'
-      keys/@19/label: '𝗲̌𝗶'
       keys/@20/label: '𝗶𝗮̌𝗼'
       keys/@12/click: ''
       keys/@13/click: ''
@@ -8452,7 +8443,6 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼̀'
-      keys/@19/label: '𝗲̀𝗶'
       keys/@20/label: '𝗶𝗮̀𝗼'
       keys/@12/click: ''
       keys/@13/click: ''
@@ -8466,7 +8456,6 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼̇'
-      keys/@19/label: '𝗲̇𝗶'
       keys/@20/label: '𝗶𝗮̇𝗼'
       keys/@13/click: ''
       keys/@14/click: ''
@@ -8478,7 +8467,6 @@ preset_keyboards:
     __patch:
       keys/@16/composing: BackSpacels15dtyr
       keys/@12/label: '𝗼'
-      keys/@19/label: '𝗲𝗶'
       keys/@20/label: '𝗶𝗮𝗼'
       keys/@13/click: ''
       keys/@14/click: ''
