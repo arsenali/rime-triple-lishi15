@@ -4,7 +4,7 @@
 schema:
   schema_id: triple_lishi15_bopomofo
   name: 李氏三拼注音
-  version: "5.0"
+  version: "6.1"
   author:
     - 佛振 <chen.sst@gmail.com>
     - 阿森納裡 <15678407@qq.com>
@@ -103,8 +103,7 @@ speller:
     - xform/^si(\w+[1-5])$/mu$1/
     - xform/^s(v\w*[1-5])$/m$1/
    # 音節合併
-    - xform/^([zcs]h?|r)ei([1-5])$/$1o$2/
-    - xform/^([zcs]h?|r)i([1-5])$/$1ei$2/
+    - xform/^([zcs]h?|r)i([1-5])$/$1o$2/
     - xform/^([zcs])([aoe]\w*)([1-5])$/$1hi$2$3/
     - xform/^([zcs])u(an|eng?)?([1-5])$/$1hv$2$3/
     - xform/^([zcs])uei([1-5])$/$1hver$2/
@@ -222,7 +221,7 @@ translator:
     - xform/o//
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)q([0-5])\>/$1A$2/     # 第3碼：韻母
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)w([0-5])\>/$1O$2/
-    - xform/\<([ZCS]i?|R)O([0-5])\>/$1EI$2/                 # 音節合併
+    - xform/\<([ZCS]i?|R)O([0-5])\>/$1I$2/                  # 音節合併
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)e([0-5])\>/$1E$2/
     - xform/\<([DTNLGKHY])uE([0-5])\>/$1VE$2/
     - xform/\<([ZCSR])uE([0-5])\>/$1uo$2/                   # 音節合併
@@ -234,9 +233,8 @@ translator:
     - xform/\<([BPMDTNLGKHYZCSR])u[ty]([0-5])\>/$1VAN$2/
     - xform/\<([ZCS])VAN([0-5])\>/$1uan$2/                  # 音節合併
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)a([0-5])\>/$1AI$2/
-    - xform/\<([BPMDTNLGKHY][iu]?|[ZCSR]u|Ri)s([0-5])\>/$1EI$2/
+    - xform/\<([BPMDTNLGKHYZCSR][iu]?)s([0-5])\>/$1EI$2/
     - xform/\<([BPMDTNLGKHY])iEI([0-5])\>/$1I$2/
-    - xform/\<([ZCS]i?|R)s([0-5])\>/$1I$2/                  # 音節合併
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)d([0-5])\>/$1AO$2/
     - xform/\<([BPMDTNLGKHYZCSR])uAO([0-5])\>/$1U$2/
     - xform/\<([BPMDTNLGKHYZCSR][iu]?)f([0-5])\>/$1OU$2/
@@ -451,8 +449,7 @@ reverse_lookup:
     - xform/\<si(\w+[1-5])\>/mu$1/
     - xform/\<s(v\w*[1-5])\>/m$1/
    # 音節合併
-    - xform/\<([zcs]h?|r)ei([1-5])\>/$1o$2/
-    - xform/\<([zcs]h?|r)i([1-5])\>/$1ei$2/
+    - xform/\<([zcs]h?|r)i([1-5])\>/$1o$2/
     - xform/\<([zcs])([aoe]\w*)([1-5])\>/$1hi$2$3/
     - xform/\<([zcs])u(an|eng?)?([1-5])\>/$1hv$2$3/
     - xform/\<([zcs])uei([1-5])\>/$1hver$2/
