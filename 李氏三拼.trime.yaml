@@ -5539,12 +5539,12 @@ preset_keyboards:
     __include: /preset_keyboards/ls15dtyiv5
     __patch:
       keys/@11/label: '𝗮̇'
-      keys/@12/label: '-𝗲̇𝗶'
+      keys/@12/label: '-𝗶̇'
       keys/@13/label: '𝗲̇'
       keys/@14/label: '𝗲̇'
       keys/@15/label:
       keys/@18/label: '𝗮̇𝗶'
-      keys/@19/label: '-𝗶̇'
+      keys/@19/label: '𝗲̇𝗶'
       keys/@20/label: '𝗮̇𝗼'
       keys/@21/label: '𝗼̇𝘂'
       keys/@22/label:
