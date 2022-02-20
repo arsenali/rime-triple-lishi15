@@ -32,6 +32,8 @@
 QQ群：[150478288](https://jq.qq.com/?_wv=1027&k=5wf1uTQ)
 
 
+<br>
+
 ### &#8627; Stargazers
 [![Stargazers repo roster for @arsenali/rime-triple-lishi15](https://reporoster.com/stars/arsenali/rime-triple-lishi15)](https://github.com/arsenali/rime-triple-lishi15/stargazers)
 
